@@ -28,8 +28,8 @@ const server = http.createServer((req, res) => {
 });
 
 // Bind the server to all available network interfaces and port 3000
-const BIND_ADDRESS = process.env.npm_package_config_host || '0.0.0.0';
-const PORT = process.env.npm_package_config_port || 3000;
+const PORT = process.env.PORT || 3000;
+const BIND_ADDRESS = process.env.BIND_ADDRESS || '0.0.0.0';
 
 server.listen(PORT, BIND_ADDRESS, () => {
     console.log(`Server is running on ${BIND_ADDRESS}:${PORT}`);
