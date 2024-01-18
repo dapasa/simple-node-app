@@ -5,10 +5,6 @@
     "scripts": {
       "start": "node app.js"
     },
-    "config": {
-      "BIND_ADDRESS": "0.0.0.0",
-      "PORT": 80
-    },
     "dependencies": {
       "express": "^4.17.1"
     }
